@@ -57,13 +57,13 @@ body {
     background-color: rgb(218, 218, 218);
 }
 
-.calc {
+#calc {
     background-color: white;
     margin-bottom: 10mm;
     padding: 10px;
     border-radius: 10px;
     font-size: 10mm;
-    width: 50%;
+    width: 24vw;
     height: 11mm;
     text-align: center;
 }

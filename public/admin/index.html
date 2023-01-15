@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Närmast Vinner</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        //let passwd = prompt("password")
+        //while (passwd != "admin") {
+        //    passwd = prompt("password")
+        //}
+    </script>
+</head>
+<body>
+    <div class="app">
+        <div class="top">
+            <h1>Närmast Vinner</h1>
+        </div>
+        <div class="status">
+            <p id="usrcnt">Users online: 1</p>
+        </div>
+        <div id="calc"></div>
+
+    
+        <div class="calculate">Start Game</div>
+        <ul id="playerlist"></ul>
+
+    </div>
+
+
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js" integrity="sha384-/KNQL8Nu5gCHLqwqfQjA689Hhoqgi2S84SNUxC3roTe4EhJ9AfLkp8QiQcU8AMzI" crossorigin="anonymous"></script>
+    <script src="./admin.js"></script>
+
+</body>
+</html>

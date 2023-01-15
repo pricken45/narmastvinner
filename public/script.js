@@ -1,5 +1,7 @@
 let socket = io();
 
+let calc = document.querySelector(".calc");
+
 let n1 = document.getElementById("alt1");
 let n2 = document.getElementById("alt2");
 let n3 = document.getElementById("alt3");
@@ -10,4 +12,7 @@ let c2 = document.getElementById("sub");
 let c3 = document.getElementById("mult");
 let c4 = document.getElementById("div");
 
-let usrbtn = [c1,c2,c3,c4];
+c1.addEventListener("click", ()=>{
+    calc.innerHTML+=c1.innerHTML;
+    console.log(c1.innerHTML);
+})

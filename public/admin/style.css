@@ -69,7 +69,7 @@ body {
 }
 
 .calculate {
-    background-color: rgb(24, 245, 24);
+    background-color: lime;
     border: 5px solid black;
 
     margin-bottom: 10mm;
@@ -87,4 +87,19 @@ body {
     cursor: pointer;
     background-color: rgb(7, 199, 7);
 
+}
+
+ul li {
+    list-style-type: none;
+    background-color: white;
+    padding: 3mm;
+    border-radius: 15px;
+    margin: 2mm;
+
+    display: inline-block;
+}
+
+ul {
+    text-align: center;
+    padding: 0;
 }

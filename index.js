@@ -26,8 +26,11 @@ io.on("connection", (socket) => {
   socket.on("start", () => {
     if (gameActive) {
       gameActive = false;
-      socket.emit("gamestatus", gameActive);
-
+      io.emit("gamestatus", gameActive);
+      for (let [key, value] of Object.entries(users)) {
+        users[key].score = Infinity;
+      }
+      io.emit("users", users);
       console.log("stopped");
       return;
     }
